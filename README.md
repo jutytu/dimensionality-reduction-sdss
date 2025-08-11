@@ -15,6 +15,18 @@ The goals of this project were to:
 - Compare methods in terms of clarity of separation between galaxy types
 
 
+## Repository Structure
+```bash
+dimensionality-reduction-sdss/
+├── data/ # SDSS dataset
+├── src/ # Python scripts
+├── results/ # generated plots
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+
 ## Dataset
 
 The dataset contains emission line flux measurements for galaxies observed by the SDSS.  

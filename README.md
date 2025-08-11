@@ -26,3 +26,14 @@ From these fluxes, we also compute standard **BPT diagram ratios**:
 - S2Ha = log(([SII]6717 + [SII]6731) / Hα)
 - O1Ha = log([OI]6300 / Hα)
 
+## Methods & Results
+
+### **BPT Diagrams**
+Baldwin–Phillips–Terlevich (BPT) diagrams are used in astrophysics to distinguish between:
+- Emission-Line (EL) galaxies — ionized gas from star formation
+- Active Galactic Nuclei (AGN) — ionization from non-thermal sources like black holes
+
+| [NII]/Hα vs [OIII]/Hβ | [SII]/Hα vs [OIII]/Hβ | [OI]/Hα vs [OIII]/Hβ |
+|---|---|---|
+| ![](results/bpt_nii.png) | ![](results/bpt_sii.png) | ![](results/bpt_oi.png) |
+

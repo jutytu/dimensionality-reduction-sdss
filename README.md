@@ -40,7 +40,9 @@ From these fluxes, we also compute standard **BPT diagram ratios**:
 
 ## Methods & Results
 
+
 ### **BPT Diagrams**
+
 Baldwin–Phillips–Terlevich (BPT) diagrams are used in astrophysics to distinguish between:
 - Emission-Line (EL) galaxies — ionized gas from star formation
 - Active Galactic Nuclei (AGN) — ionization from non-thermal sources like black holes
@@ -51,6 +53,7 @@ Baldwin–Phillips–Terlevich (BPT) diagrams are used in astrophysics to distin
 
 The densely populated areas of the plots (below the so-called Kewley line in the first figure) are interpreted as EL galaxies, the sparse points above - as AGN galaxies.  
 The goal is to reduce the number of features so that the distinction between the two galaxy types is conserved.
+
 
 ### **PCA**
 
@@ -72,21 +75,23 @@ PCA is a linear dimensionality reduction technique that transforms the original 
 
 
 ### **t-SNE**
-Non-linear projection emphasizing local structures.
 
-| PCA 2D Projection | PCA 3D Projection |
+t-SNE is a non-linear method that converts distances between points into probabilities representing similarities. It tries to preserve local neighborhoods, so points that are close in high-dimensional space stay close in the low-dimensional map. It is particularly good for revealing small-scale clusters.
+
+**Results:**
+- Two separate clusters, more visible with higher perplexity.
+- Local structure preserved - the densities of both clusters are similar, but they are separated. We expect the bottom cluster to be the EL galaxies (bigger number of points).
+
+| t-SNE 2D (perplexity=30) | t-SNE 2D (perplexity=50) |
 |---|---|
 | ![](results/tsne_ppx30.png) | ![](results/tsne_ppx50.png) |
 
 
----
-
 ### **UMAP**
+
 Preserves local & global structures efficiently.
 
 | UMAP 2D | UMAP 3D |
 |---|---|
 | ![](results/umap_2d.png) | ![](results/umap_3d.png) |
-
----
 

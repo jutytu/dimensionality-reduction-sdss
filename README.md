@@ -49,18 +49,27 @@ Baldwin–Phillips–Terlevich (BPT) diagrams are used in astrophysics to distin
 |---|---|---|
 | ![](results/bpt_nii.png) | ![](results/bpt_sii.png) | ![](results/bpt_oi.png) |
 
+The densely populated areas of the plots (below the so-called Kewley line in the first figure) are interpreted as EL galaxies, the sparse points above - as AGN galaxies.  
+The goal is to reduce the number of features so that the distinction between the two galaxy types is conserved.
+
 ### **PCA**
-Explained variance and galaxy projections in reduced dimensions.
 
-Non-linear projection emphasizing local structures.
+PCA is a linear dimensionality reduction technique that transforms the original variables into a set of uncorrelated variables called principal components. Each component is a weighted combination of the original features and is ordered so that the first few components explain most of the variance in the data.
 
-![](results/pca_variance.png)
+**Results:**
+- PC1 explains the majority of the variance (>90%), along with PC2 and PC3 they account for approximately 100% of the variance.
+
+| PCA variance | PCA new components |
+|---|---|
+| ![](results/pca_variance.png) | ![](results/pca_components.png) |
+
+- We observe sparse points in both 2D and 3D projection. After zooming in, one of the points actually turns out to be a whole cluster of points, dense in one region, surrounded by a spread of outliers.
+- PCA preserves global structure - the dense cluster is most likely the EL galaxies, the outliers correspond to the AGNs.
 
 | PCA 2D Projection | PCA 3D Projection | PCA 2D Projection zoom-in |
 |---|---|---|
 | ![](results/pca_2d.png) | ![](results/pca_3d.png) | ![](results/pca_2d_zoom.png) |
 
----
 
 ### **t-SNE**
 Non-linear projection emphasizing local structures.

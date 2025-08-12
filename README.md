@@ -101,3 +101,12 @@ It is faster than t-SNE and can be applied to very large datasets, often produci
 |---|---|
 | ![](results/umap_2d.png) | ![](results/umap_3d.png) |
 
+
+## Summary
+
+| Method | Strengths | Weaknesses | Outcome |
+|---|---|---|---|
+| **PCA** | Fast, interpretable, preserves global variance | Misses non-linear structures | Showed some structure but not strongly separated |
+| **t-SNE** | Great for local structure, compact clusters | Computationally slower, distances not globally meaningful | Revealed clusters not seen in PCA |
+| **UMAP** | Preserves local and global structure, fast | Less interpretable, sensitive to parameters | Inconclusive for this dataset |
+

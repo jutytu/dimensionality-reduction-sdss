@@ -89,7 +89,13 @@ t-SNE is a non-linear method that converts distances between points into probabi
 
 ### **UMAP**
 
-Preserves local & global structures efficiently.
+UMAP models the data as a high-dimensional graph of nearest neighbors and then optimizes a low-dimensional embedding that preserves both local and global structure.  
+It is faster than t-SNE and can be applied to very large datasets, often producing interpretable clusters.
+
+**Results:**
+- 2D Projection: Slight variation in point density, but no clear separations between galaxy populations.
+- 3D Projection: Even less distinction; most regions blend together.
+- UMAP did not provide strong separation for this dataset, making results largely inconclusive compared to PCA and t-SNE.
 
 | UMAP 2D | UMAP 3D |
 |---|---|

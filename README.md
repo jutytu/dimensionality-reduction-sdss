@@ -49,3 +49,35 @@ Baldwin–Phillips–Terlevich (BPT) diagrams are used in astrophysics to distin
 |---|---|---|
 | ![](results/bpt_nii.png) | ![](results/bpt_sii.png) | ![](results/bpt_oi.png) |
 
+### **PCA**
+Explained variance and galaxy projections in reduced dimensions.
+
+Non-linear projection emphasizing local structures.
+
+![](results/pca_variance.png)
+
+| PCA 2D Projection | PCA 3D Projection | PCA 2D Projection zoom-in |
+|---|---|---|
+| ![](results/pca_2d.png) | ![](results/pca_3d.png) | ![](results/pca_2d_zoom.png) |
+
+---
+
+### **t-SNE**
+Non-linear projection emphasizing local structures.
+
+| PCA 2D Projection | PCA 3D Projection |
+|---|---|
+| ![](results/tsne_ppx30.png) | ![](results/tsne_ppx50.png) |
+
+
+---
+
+### **UMAP**
+Preserves local & global structures efficiently.
+
+| UMAP 2D | UMAP 3D |
+|---|---|
+| ![](results/umap_2d.png) | ![](results/umap_3d.png) |
+
+---
+
